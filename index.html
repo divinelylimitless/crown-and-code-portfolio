@@ -1,135 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crown & Code</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Counter App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="container">
+    <h1>Counter App</h1>
 
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="crown-glow.html">Crown & Glow</a>
-      <button type="button" onclick="toggleDarkMode()">🌙</button>
-    </nav>
+    <p id="count">0</p>
 
-    <section class="hero">
-      <h1>Crown & Code</h1>
-      <p>Creative developer building elegant web experiences.</p>
-
-      <div class="hero-buttons">
-        <a class="btn" href="contact.html">Work With Me</a>
-        <a class="btn" href="https://github.com/divinelylimitless" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
-      </div>
-    </section>
-
-    <section class="about-preview">
-      <h2>About</h2>
-      <p>
-        I’m Alicia, a creative developer building elegant web experiences with HTML, CSS and JavaScript.
-        Crown & Code is my space to explore clean design, interactive features and modern web development.
-      </p>
-
-      <p class="skills-line">
-        HTML • CSS • JavaScript • Responsive Design • UI Layout
-      </p>
-
-      <a class="btn" href="about.html">Read More</a>
-    </section>
-
-    <section class="skills-section">
-      <h2>Skills</h2>
-
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>HTML</h3>
-          <p>Building structured, accessible web pages.</p>
-        </div>
-
-        <div class="skill-card">
-          <h3>CSS</h3>
-          <p>Creating responsive layouts with Flexbox and modern styling.</p>
-        </div>
-
-        <div class="skill-card">
-          <h3>JavaScript</h3>
-          <p>Adding interactivity and dynamic behaviour to websites.</p>
-        </div>
-
-        <div class="skill-card">
-          <h3>GitHub</h3>
-          <p>Version control and publishing projects online.</p>
-        </div>
-      </div>
-    </section>
-
-    <hr>
-
-    <section class="projects-section">
-      <h2>Projects</h2>
-
-      <div class="projects">
-        <a class="project-card" href="index.html">
-          <div class="icon">💻</div>
-          <h3>Crown & Code Portfolio</h3>
-          <p>A multi-page portfolio built using HTML and CSS.</p>
-        </a>
-
-        <a class="project-card" href="#">
-          <div class="icon">📐</div>
-          <h3>Flexbox Layout Practice</h3>
-          <p>Practising responsive layout using Flexbox.</p>
-        </a>
-
-        <a class="project-card" href="contact.html">
-          <div class="preview preview-contact"></div>
-          <div class="icon">✉️</div>
-          <h3>Contact Form Page</h3>
-          <p>Built a clean contact page layout with styled inputs.</p>
-        </a>
-
-        <a class="project-card" href="crown-glow.html">
-          <div class="preview preview-glow"></div>
-          <div class="icon">✨</div>
-          <h3>Crown & Glow Website</h3>
-          <p>A luxury wellness brand website showcasing workshops, community events, and personal empowerment experiences.</p>
-        </a>
-
-        <a class="project-card featured-project" href="js-message-generator/index.html">
-          <div class="icon">💬</div>
-          <h3>Crown & Code Message Generator</h3>
-          <p>A JavaScript mini project that displays a random motivational message when the user clicks a button.</p>
-          <span class="view-code">View Code →</span>
-        </a>
-
-        <a class="project-card" href="js-greeter/index.html">
-          <div class="icon">👋</div>
-          <h3>JavaScript Greeter</h3>
-          <p>A small JavaScript project that greets the user by name.</p>
-        </a>
-
-        <a class="project-card" href="#">
-          <div class="icon">🌙</div>
-          <h3>Dark Mode Toggle</h3>
-          <p>A JavaScript feature allowing users to switch between light and dark themes.</p>
-        </a>
-        <a class="project-card" href="quote-generator/index.html">
-  <div class="icon">💭</div>
-  <h3>Random Quote Generator</h3>
-  <p>A JavaScript mini-project that displays a random motivational quote when the user clicks a button.</p>
-</a>
-      </div>
-    </section>
-
-    <footer>
-      <p>© 2026 Crown & Code — Built by Alicia</p>
-    </footer>
-
+    <div class="buttons">
+      <button onclick="decreaseCount()">-</button>
+      <button onclick="resetCount()">Reset</button>
+      <button onclick="increaseCount()">+</button>
+    </div>
   </div>
 
   <script src="script.js"></script>

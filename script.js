@@ -1,16 +1,11 @@
-let count = 0;
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
 
-function increaseCount() {
-  count++;
-  document.getElementById("count").innerText = count;
-}
+  const button = document.querySelector(".nav button");
 
-function decreaseCount() {
-  count--;
-  document.getElementById("count").innerText = count;
-}
-
-function resetCount() {
-  count = 0;
-  document.getElementById("count").innerText = count;
+  if (document.body.classList.contains("dark-mode")) {
+    button.textContent = "☀️";
+  } else {
+    button.textContent = "🌙";
+  }
 }

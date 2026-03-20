@@ -1,0 +1,26 @@
+body {
+  font-family: Georgia, serif;
+  text-align: center;
+  padding-top: 80px;
+  background: #f7f5ef;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 18px;
+  margin-left: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #d6cbb5;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+}

@@ -48,8 +48,11 @@ NAVIGATION
   margin-bottom: 40px;
   flex-wrap: wrap;
   position: sticky;
-  top: 20px;
+  top: 12px;
   z-index: 1000;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 10px 12px;
+  border-radius: 18px;
 }
 
 .nav a,
@@ -551,6 +554,24 @@ MOBILE
     padding: 24px 16px;
   }
 
+  .nav {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 24px;
+    padding: 0;
+    background: transparent;
+  }
+
+  .nav a,
+  .nav button {
+    font-size: 14px;
+    padding: 10px 12px;
+    white-space: nowrap;
+  }
+
   .hero {
     padding: 40px 20px;
   }
@@ -565,20 +586,6 @@ MOBILE
 
   .projects {
     grid-template-columns: 1fr;
-  }
-
-  .nav {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .nav a,
-  .nav button {
-    font-size: 14px;
-    padding: 10px 12px;
-    white-space: nowrap;
   }
 
   .about-preview {

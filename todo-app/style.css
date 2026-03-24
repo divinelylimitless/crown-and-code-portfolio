@@ -65,3 +65,7 @@ li {
   border: none;
   cursor: pointer;
 }
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}

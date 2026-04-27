@@ -182,3 +182,30 @@ button:hover {
   margin-top: 18px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
+.flyer-section a {
+  color: #2a2a2a;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.flyer-section a:hover {
+  opacity: 0.7;
+}
+
+.flyer-section a,
+.cta-box a {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 14px 28px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #c8a97e, #e6d3b3);
+  color: #1f1f1f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.flyer-section a:hover,
+.cta-box a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}

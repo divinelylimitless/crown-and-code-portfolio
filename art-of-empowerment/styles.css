@@ -166,4 +166,8 @@ button:hover {
   button {
     width: 100%;
   }
+}button,
+.button {
+  display: inline-block;
+  text-decoration: none;
 }

@@ -288,3 +288,40 @@ RECOVERY FIX
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================
+COLOUR RECOVERY FIX
+========================= */
+
+body {
+  color: #2a2a2a;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+li,
+span {
+  color: #2a2a2a;
+}
+
+.hero p,
+.about-preview p,
+.project-card p,
+.skill-card p,
+.work-with-me p {
+  color: #5f5a56;
+}
+
+.nav a,
+.nav button,
+.btn,
+.cta-button {
+  color: #2a2a2a;
+}
+
+footer {
+  color: #777;
+}

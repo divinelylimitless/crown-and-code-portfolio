@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
+  <title>Contact | Crown & Code</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<div class="container">
+<body>
 
   <nav class="nav">
     <a href="index.html">Home</a>
@@ -18,32 +17,28 @@
     <button type="button" onclick="toggleDarkMode()">🌙</button>
   </nav>
 
-  <section class="contact-section">
-    <h1>Contact</h1>
-    <p>For collaborations or web projects, email me.</p>
+  <main class="container">
+    <section class="contact-section">
+      <h1>Contact</h1>
 
-    <a href="mailto:crownandglowlondon@gmail.com" class="btn">Email Me</a>
+      <p>
+        For collaborations, website enquiries, partnerships,
+        or creative projects, feel free to get in touch.
+      </p>
 
-    <div class="contact-container">
-
-      <h2>Message</h2>
-
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your name">
-
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="Write your message..."></textarea>
-
-        <button type="submit">Send (coming soon)</button>
+      <form class="contact-form">
+        <input type="text" placeholder="Your name">
+        <input type="email" placeholder="Your email">
+        <textarea placeholder="Tell me about your project..."></textarea>
+        <button class="btn" type="submit">Send Enquiry</button>
       </form>
+    </section>
+  </main>
 
-    </div>
-  </section>
+  <footer class="footer">
+    <p>© 2026 Crown & Code — Built by Alicia</p>
+  </footer>
 
-</div>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>

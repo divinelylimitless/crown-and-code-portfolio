@@ -65,7 +65,7 @@ GLOW HERO
 
 .glow-hero {
   height: 100vh;
-  background-image: url("images/crown-glow-retreat.PNG");
+background-image: url("./images/crown-glow-retreat.png");
   background-size: cover;
   background-position: center;
   display: flex;

@@ -418,3 +418,48 @@ CONTACT PAGE
     font-size: 3rem;
   }
 }
+.heritage-hero {
+  min-height: 100vh;
+  background-image: url("./images/heritage-essentials.PNG");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+  position: relative;
+}
+
+.heritage-content {
+  max-width: 620px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(3px);
+  padding: 40px;
+  border-radius: 24px;
+}
+
+.heritage-content h1 {
+  font-size: 5rem;
+  line-height: 0.95;
+  margin-bottom: 24px;
+  color: #2d1d12;
+}
+
+@media (max-width: 700px) {
+  .heritage-hero {
+    padding: 40px 24px;
+  }
+
+  .heritage-content h1 {
+    font-size: 3rem;
+  }
+}
+.heritage-hero {
+  min-height: 100vh;
+  background-image: url("./images/heritage-essentials.PNG");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+  position: relative;
+}

@@ -390,34 +390,10 @@ CONTACT PAGE
   }
 }
 
-.heritage-hero {
-  min-height: 90vh;
-  background: linear-gradient(135deg, #efe2d3, #f8f3ec);
-  display: flex;
-  align-items: center;
-  padding: 80px;
-}
+./* =========================
+HERITAGE ESSENTIALS PAGE
+========================= */
 
-.heritage-content {
-  max-width: 620px;
-}
-
-.heritage-content h1 {
-  font-size: 5rem;
-  line-height: 1;
-  margin-bottom: 24px;
-  color: #2d1d12;
-}
-
-@media (max-width: 700px) {
-  .heritage-hero {
-    padding: 40px 24px;
-  }
-
-  .heritage-content h1 {
-    font-size: 3rem;
-  }
-}
 .heritage-hero {
   min-height: 100vh;
   background-image: url("./images/heritage-essentials.PNG");
@@ -431,35 +407,44 @@ CONTACT PAGE
 
 .heritage-content {
   max-width: 620px;
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(3px);
-  padding: 40px;
-  border-radius: 24px;
+  background: rgba(248, 243, 236, 0.72);
+  backdrop-filter: blur(6px);
+  padding: 44px;
+  border-radius: 26px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+}
+
+.heritage-content .hero-tag {
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  color: #4b3425;
 }
 
 .heritage-content h1 {
-  font-size: 5rem;
+  font-size: 4.8rem;
   line-height: 0.95;
   margin-bottom: 24px;
   color: #2d1d12;
 }
 
+.heritage-content .hero-text {
+  font-size: 1.15rem;
+  margin-bottom: 30px;
+  color: #3d3128;
+}
+
 @media (max-width: 700px) {
   .heritage-hero {
     padding: 40px 24px;
+    background-position: center right;
+  }
+
+  .heritage-content {
+    padding: 28px;
   }
 
   .heritage-content h1 {
     font-size: 3rem;
   }
-}
-.heritage-hero {
-  min-height: 100vh;
-  background-image: url("./images/heritage-essentials.PNG");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  padding: 80px;
-  position: relative;
 }

@@ -467,3 +467,13 @@ HERITAGE ESSENTIALS PAGE
   position: relative;
   z-index: 2;
 }
+.heritage-hero {
+  min-height: 100vh;
+  background-image: url("./images/heritage-essentials.PNG");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+  position: relative;
+}

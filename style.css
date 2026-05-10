@@ -389,3 +389,32 @@ CONTACT PAGE
     height: 220px;
   }
 }
+
+.heritage-hero {
+  min-height: 90vh;
+  background: linear-gradient(135deg, #efe2d3, #f8f3ec);
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
+
+.heritage-content {
+  max-width: 620px;
+}
+
+.heritage-content h1 {
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 24px;
+  color: #2d1d12;
+}
+
+@media (max-width: 700px) {
+  .heritage-hero {
+    padding: 40px 24px;
+  }
+
+  .heritage-content h1 {
+    font-size: 3rem;
+  }
+}

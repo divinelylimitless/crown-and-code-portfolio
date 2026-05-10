@@ -46,12 +46,13 @@ NAVIGATION
 .nav button {
   background: rgba(255,255,255,0.75);
   border: 1px solid rgba(0,0,0,0.06);
-  padding: 10px 18px;
-  border-radius: 30px;
+  padding: 8px 14px;
+  border-radius: 24px;
   color: #2d1d12;
   backdrop-filter: blur(4px);
   cursor: pointer;
   transition: 0.2s ease;
+  font-size: 0.9rem;
 }
 
 .nav a:hover,
@@ -293,11 +294,13 @@ CONTACT PAGE
 .container {
   width: 92%;
   max-width: 1100px;
-  margin: 60px auto;
-  background: rgba(255,255,255,0.78);
+  margin: 0 auto 80px;
+background: rgba(255,255,255,0.52);
+backdrop-filter: blur(10px);
   border-radius: 24px;
   padding: 50px;
   box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+  
 }
 
 .hero,
@@ -466,14 +469,531 @@ HERITAGE ESSENTIALS PAGE
 .heritage-content {
   position: relative;
   z-index: 2;
+
 }
-.heritage-hero {
+.about-image img {
+  width: 180px !important;
+  height: 180px !important;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+  margin: 0 auto 24px;
+}
+
+/* =========================
+SERVICES PAGE
+========================= */
+
+.services-hero {
+  min-height: 90vh;
+  background-image: url("./images/services-background.PNG");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px;
+  position: relative;
+}
+
+.services-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.28);
+}
+
+.services-hero .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  background: rgba(255,255,255,0.10);
+  backdrop-filter: blur(8px);
+  padding: 50px;
+  border-radius: 28px;
+}
+
+.services-hero h1 {
+  font-size: 4rem;
+  line-height: 0.95;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.services-hero p {
+  color: rgba(255,255,255,0.92);
+  font-size: 1.15rem;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 700px) {
+  .services-hero {
+    padding: 40px 24px;
+  }
+
+  .services-hero h1 {
+    font-size: 3rem;
+  }
+
+  .services-hero .hero-content {
+    padding: 30px;
+  }
+}
+.about-image img {
+  width: 180px !important;
+  height: 180px !important;
+  max-width: 180px !important;
+  object-fit: cover !important;
+  border-radius: 18px !important;
+  display: block;
+  margin: 0 auto 24px;
+}.about-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* =========================
+HOMEPAGE HERO
+========================= */
+
+.home-hero {
   min-height: 100vh;
-  background-image: url("./images/heritage-essentials.PNG");
+  background-image: url("./images/homepage-hero.PNG");
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   padding: 80px;
   position: relative;
+}
+
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.28);
+}
+
+.home-hero .hero-overlay {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  background: rgba(255,255,255,0.10);
+  backdrop-filter: blur(8px);
+  padding: 50px;
+  border-radius: 28px;
+}
+
+.home-hero h1 {
+  font-size: 5rem;
+  line-height: 0.95;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.home-hero .hero-text {
+  color: rgba(255,255,255,0.92);
+  font-size: 1.15rem;
+  margin-bottom: 32px;
+}
+
+.home-hero .hero-tag {
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+.home-hero .hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+
+  .home-hero {
+    padding: 40px 24px;
+  }
+
+  .home-hero h1 {
+    font-size: 3rem;
+  }
+
+  .home-hero .hero-overlay {
+    padding: 30px;
+  }
+ }
+
+/* =========================
+CONTACT HERO
+========================= */
+
+.contact-hero {
+  min-height: 100vh;
+  background-image: url("./images/contact-background.PNG");
+  background-size: cover;
+  background-position: center;
+  padding: 140px 80px 80px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-overlay {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  gap: 80px;
+  align-items: center;
+}
+
+.contact-left h1 {
+  font-size: 5rem;
+  line-height: 0.95;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.contact-left .hero-text {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.15rem;
+  max-width: 520px;
+}
+
+.contact-card {
+  background: rgba(255,255,255,0.16);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  border-radius: 28px;
+}
+
+.contact-card h2 {
+  margin-bottom: 24px;
+  color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.12);
+  color: white;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 160px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255,255,255,0.72);
+}
+
+/* HERITAGE FIX */
+
+.heritage-hero {
+  min-height: 100vh !important;
+  background-image: url("./images/heritage-essentials.PNG") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 90px 80px 80px !important;
+  position: relative !important;
+}
+
+.heritage-content {
+  max-width: 620px !important;
+  background: rgba(248, 243, 236, 0.75) !important;
+  backdrop-filter: blur(6px) !important;
+  padding: 44px !important;
+  border-radius: 26px !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.nav {
+  position: absolute !important;
+  top: 25px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 12px !important;
+  flex-wrap: wrap !important;
+  width: auto !important;
+  padding: 0 !important;
+  z-index: 100 !important;
+}
+
+.nav a,
+.nav button {
+  padding: 8px 14px !important;
+  border-radius: 24px !important;
+  background: rgba(255,255,255,0.75) !important;
+  color: #2d1d12 !important;
+  border: 1px solid rgba(0,0,0,0.06) !important;
+  font-size: 0.9rem !important;
+}
+
+/* FINAL CONTAINER SOFTENING FIX */
+
+.container {
+  background: rgba(255, 255, 255, 0.45) !important;
+  backdrop-filter: blur(12px) !important;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.04) !important;
+
+}/* FINAL NAV SOFTENING FIX */
+
+.nav a,
+.nav button {
+  background: rgba(255, 255, 255, 0.45) !important;
+  backdrop-filter: blur(10px) !important;
+}
+/* FINAL NAV FIX */
+
+.nav {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.nav a,
+.nav button {
+  background: rgba(255, 255, 255, 0.28) !important;
+  border: 1px solid rgba(255,255,255,0.25) !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(12px) !important;
+}
+/* ABOUT PAGE FIX */
+
+.about-page {
+  padding: 120px 60px 80px;
+  min-height: auto !important;
+}
+
+.about-header {
+  align-items: center;
+}
+
+.about-content {
+  max-width: 700px;
+}
+/* ABOUT PAGE TIGHTENING */
+
+body:has(.about-section) .container {
+  max-width: 1000px !important;
+  padding: 40px !important;
+  margin: 110px auto 40px !important;
+  min-height: auto !important;
+}
+
+body:has(.about-section) .about-section {
+  padding: 40px 20px !important;
+  margin-bottom: 0 !important;
+}
+
+/* ABOUT EXTRA SECTIONS */
+
+.about-extra {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.about-block {
+  padding: 40px;
+  background: rgba(255,255,255,0.38);
+  border-radius: 24px;
+  backdrop-filter: blur(10px);
+}
+
+.about-block h2 {
+  font-size: 2.2rem;
+  margin: 16px 0;
+}
+
+.about-block p {
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+.empowerment-hero {
+  min-height: 100vh;
+  background-image: url("./images/empowerment-background.PNG");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 90px 80px 80px;
+  position: relative;
+}
+/* =========================
+ART OF EMPOWERMENT
+========================= */
+
+.empowerment-hero {
+  min-height: 100vh;
+  background-image: url("./images/empowerment-background.PNG");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 90px 80px 80px;
+  position: relative;
+}
+
+.empowerment-overlay {
+  max-width: 700px;
+  background: rgba(32, 26, 22, 0.42);
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 30px;
+}
+
+.empowerment-overlay .hero-tag {
+  color: rgba(255,255,255,0.82);
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.empowerment-overlay h1 {
+  font-size: 5rem;
+  line-height: 0.95;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.empowerment-overlay .hero-text {
+  color: rgba(255,255,255,0.88);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 700px) {
+
+  .empowerment-hero {
+    padding: 120px 24px 60px;
+  }
+
+  .empowerment-overlay {
+    padding: 30px;
+  }
+
+  .empowerment-overlay h1 {
+    font-size: 3rem;
+  }
+
+}
+/* =========================
+AEON'S LEGACY
+========================= */
+
+.aeon-hero {
+  min-height: 100vh;
+  background-image: url("./images/aeons-legacy-background.PNG");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 90px 80px 80px;
+}
+
+.aeon-overlay {
+  max-width: 720px;
+  background: rgba(255,255,255,0.28);
+  backdrop-filter: blur(12px);
+  padding: 50px;
+  border-radius: 30px;
+}
+
+.aeon-overlay h1 {
+  font-size: 5rem;
+  line-height: 0.95;
+  margin-bottom: 24px;
+  color: #2d1d12;
+}
+
+.aeon-overlay .hero-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 700px) {
+
+  .aeon-hero {
+    padding: 120px 24px 60px;
+  }
+
+  .aeon-overlay {
+    padding: 30px;
+  }
+
+  .aeon-overlay h1 {
+    font-size: 3rem;
+  }
+
+}
+
+/* =========================
+GLOBAL MOBILE REFINEMENTS
+========================= */
+
+@media (max-width: 700px) {
+
+  .home-hero h1,
+  .services-hero h1,
+  .glow-hero h1,
+  .heritage-content h1,
+  .contact-left h1,
+  .empowerment-overlay h1,
+  .aeon-overlay h1,
+  .about-text h1 {
+    font-size: 2.8rem !important;
+    line-height: 1.02 !important;
+  }
+
+  .hero-overlay,
+  .hero-content,
+  .heritage-content,
+  .contact-card,
+  .empowerment-overlay,
+  .aeon-overlay {
+    padding: 28px !important;
+  }
+
+  .projects {
+    grid-template-columns: 1fr !important;
+  }
+
+  .featured-project {
+    grid-column: span 1 !important;
+  }
+
+  .nav {
+    gap: 8px !important;
+    width: 92% !important;
+  }
+
+  .nav a {
+    font-size: 0.78rem !important;
+    padding: 7px 12px !important;
+  }
+
 }

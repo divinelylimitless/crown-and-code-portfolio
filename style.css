@@ -1591,3 +1591,90 @@ body:has(.wingchun-hero) .about-block:hover {
   object-position: center 10% !important;
   filter: brightness(0.82);
 }
+/* WING CHUN MOBILE FIX */
+
+@media (max-width: 700px) {
+
+  body:has(.wingchun-hero) .nav {
+    position: absolute !important;
+    top: 16px !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    padding: 0 14px !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  body:has(.wingchun-hero) .logo img {
+    height: 58px !important;
+  }
+
+  body:has(.wingchun-hero) .nav-links {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+
+  body:has(.wingchun-hero) .nav-links a {
+    font-size: 0.72rem !important;
+    padding: 6px 10px !important;
+  }
+
+  .wingchun-hero {
+    min-height: 100vh !important;
+    padding: 150px 20px 50px !important;
+    background-position: center top !important;
+  }
+
+  .wingchun-overlay {
+    max-width: 100% !important;
+    padding: 28px !important;
+    border-radius: 22px !important;
+  }
+
+  .wingchun-overlay h1 {
+    font-size: 2.5rem !important;
+    line-height: 1 !important;
+  }
+
+  .wingchun-overlay .hero-text {
+    font-size: 1rem !important;
+  }
+
+  .hero-buttons {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  body:has(.wingchun-hero) .container {
+    width: 94% !important;
+    padding: 24px !important;
+    margin: 0 auto 40px !important;
+  }
+
+  body:has(.wingchun-hero) .about-block {
+    padding: 26px !important;
+  }
+
+  body:has(.wingchun-hero) h2 {
+    font-size: 1.8rem !important;
+  }
+
+  .wing-image-break {
+    max-width: 100% !important;
+    margin: 50px auto !important;
+  }
+
+  .wing-image-break img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .footer-logo img {
+    width: 70px !important;
+  }
+}

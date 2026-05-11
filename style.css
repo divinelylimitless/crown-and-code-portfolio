@@ -1052,3 +1052,335 @@ CALM POWER PODCAST
     font-size: 3rem;
   }
 }
+/* HOMEPAGE CLEANUP */
+
+body:has(.home-hero) .container {
+  margin: 0 auto 60px !important;
+  padding: 0 30px 50px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body:has(.home-hero) section {
+  margin-bottom: 55px !important;
+}
+
+body:has(.home-hero) .work-with-me {
+  padding-top: 50px !important;
+}
+
+@media (max-width: 700px) {
+  body:has(.home-hero) .container {
+    width: 100% !important;
+    padding: 0 18px 40px !important;
+  }
+
+  body:has(.home-hero) .home-hero h1 {
+    font-size: 2.6rem !important;
+  }
+
+  body:has(.home-hero) .home-hero {
+    padding: 130px 24px 60px !important;
+  }
+}
+.projects-preview {
+  text-align: center;
+  max-width: 760px;
+  margin: 70px auto;
+  padding: 40px 20px;
+}
+
+.projects-preview h2 {
+  font-size: 2.4rem;
+  margin-bottom: 18px;
+}
+
+.projects-preview p {
+  margin-bottom: 24px;
+}
+/* HOMEPAGE BUTTON SPACING */
+
+.work-with-me .btn,
+.about-preview .btn,
+.projects-preview .btn {
+  margin-top: 28px;
+}
+
+.work-with-me,
+.about-preview,
+.projects-preview {
+  padding: 30px 0;
+}
+.projects .project-card:last-child {
+  grid-column: 1 / -1;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* FINAL NAV CLEANUP */
+
+.nav {
+  position: absolute !important;
+  top: 28px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 14px !important;
+  width: auto !important;
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  z-index: 1000 !important;
+}
+
+.nav a,
+.nav button {
+  background: rgba(255,255,255,0.42) !important;
+  border: 1px solid rgba(255,255,255,0.35) !important;
+  color: #2d1d12 !important;
+  padding: 8px 16px !important;
+  border-radius: 999px !important;
+  backdrop-filter: blur(14px) !important;
+  font-size: 0.9rem !important;
+  box-shadow: none !important;
+}
+/* =========================
+SERVICES SECTION GLOW UP
+========================= */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 50px;
+}
+
+.service-card {
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 28px;
+  padding: 42px 36px;
+  text-align: left;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.72);
+}
+
+.service-icon {
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+}
+
+.service-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 14px;
+  line-height: 1.1;
+  color: #2d1d12;
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #5f5147;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 32px 26px;
+  }
+
+}
+/* =========================
+LOGO NAV
+========================= */
+
+.nav {
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92%;
+  max-width: 1200px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.logo img {
+  height: 90px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.nav-links a {
+  background: rgba(255,255,255,0.35);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 0px 32px;
+  border-radius: 999px;
+  color: #2d1d12;
+}
+/* =========================
+DESKTOP NAV LAYOUT
+========================= */
+
+.nav {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 50px;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 90px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.nav-links a {
+  background: rgba(255,255,255,0.35);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 8px 16px;
+  border-radius: 999px;
+  color: #2d1d12;
+}
+/* FINAL LOGO LEFT NAV */
+
+.nav {
+  position: absolute !important;
+  top: 24px !important;
+  left: 0 !important;
+  transform: none !important;
+  width: 100% !important;
+  padding: 0 48px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  background: transparent !important;
+  z-index: 1000 !important;
+}
+
+.logo {
+  margin-right: auto !important;
+}
+
+.logo img {
+  height: 90px !important;
+  width: auto !important;
+  display: block !important;
+}
+
+.nav-links {
+  display: flex !important;
+  gap: 14px !important;
+  align-items: center !important;
+  margin-left: auto !important;
+}
+/* REMOVE LOGO PILL */
+
+.logo {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  backdrop-filter: none !important;
+}
+
+.logo img {
+  background: transparent !important;
+}
+/* STOP LOGO INHERITING NAV PILL */
+
+.nav .logo {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+/* FINAL NAV OVERRIDE */
+
+.nav {
+  position: absolute !important;
+  top: 24px !important;
+
+  left: 0 !important;
+  right: 0 !important;
+
+  transform: none !important;
+
+  width: 100% !important;
+
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+
+  padding: 0 32px !important;
+
+  margin: 0 !important;
+
+  background: transparent !important;
+  z-index: 9999 !important;
+}
+
+.nav-links {
+  display: flex !important;
+  gap: 14px !important;
+  align-items: center !important;
+  margin-left: auto !important;
+}
+
+.nav .logo {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+.logo img {
+  height: 90px !important;
+  width: auto !important;
+  display: block !important;
+}

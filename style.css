@@ -1587,3 +1587,9 @@ body:has(.wingchun-hero) .about-block:hover {
   margin: 0 auto;
   line-height: 1.7;
 }
+.wingchun-thumb {
+  object-position: center 15%;
+}
+.wingchun-thumb {
+  filter: brightness(0.82);
+}

@@ -997,3 +997,58 @@ GLOBAL MOBILE REFINEMENTS
   }
 
 }
+/* =========================
+CALM POWER PODCAST
+========================= */
+
+.calm-hero {
+  min-height: 100vh;
+  background-image: url("./images/calm-power-background.PNG");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 90px 80px 80px;
+}
+
+.calm-overlay {
+  max-width: 720px;
+  background: rgba(20, 14, 12, 0.52);
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 30px;
+}
+
+.calm-overlay h1 {
+  font-size: 5rem;
+  line-height: 0.95;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.calm-overlay .hero-tag {
+  color: rgba(255,255,255,0.82);
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.calm-overlay .hero-text {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 700px) {
+  .calm-hero {
+    padding: 120px 24px 60px;
+  }
+
+  .calm-overlay {
+    padding: 30px;
+  }
+
+  .calm-overlay h1 {
+    font-size: 3rem;
+  }
+}

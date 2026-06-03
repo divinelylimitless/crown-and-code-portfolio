@@ -2451,3 +2451,13 @@ body:has(.projects-section) .project-card:nth-child(7) {
     line-height: 1.65 !important;
   }
 }
+.footer-logo img {
+  width: 70px;
+  height: auto;
+  opacity: 0.75;
+  transition: 0.3s ease;
+}
+
+.footer-logo img:hover {
+  opacity: 1;
+}

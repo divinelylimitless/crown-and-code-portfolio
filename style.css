@@ -2249,4 +2249,19 @@ body:has(.projects-section) .project-card:nth-child(7) {
   .wingchun-hero {
     padding-top: 180px !important;
   }
+}/* FINAL MOBILE OVERLAP FIX */
+
+@media (max-width: 700px) {
+  .services-hero .hero-content {
+    margin-top: 95px !important;
+  }
+
+  .services-hero h1 {
+    font-size: 2.35rem !important;
+    line-height: 1.08 !important;
+  }
+
+  .services-hero {
+    padding-top: 120px !important;
+  }
 }

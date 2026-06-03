@@ -2044,3 +2044,31 @@ body:has(.projects-section) .project-card:nth-child(7) {
     transform: none;
   }
 }
+@media (max-width: 700px) {
+  .nav {
+    padding: 12px !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .logo img {
+    height: 55px !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem !important;
+    padding: 7px 12px !important;
+  }
+
+  .heritage-content {
+    margin-top: 90px !important;
+  }
+}

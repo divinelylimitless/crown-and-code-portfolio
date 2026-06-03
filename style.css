@@ -2350,3 +2350,42 @@ body:has(.projects-section) .project-card:nth-child(7) {
     padding-top: 150px !important;
   }
 }
+/* ABOUT PAGE MOBILE FIX */
+
+@media (max-width: 700px) {
+
+  .about-hero,
+  .about-content,
+  .about-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+  }
+
+  .about-image,
+  .about-text,
+  .philosophy-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .about-image img {
+    width: 100% !important;
+    max-width: 280px !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+
+  .about-text {
+    text-align: center !important;
+  }
+
+  .about-text h1 {
+    font-size: 2.8rem !important;
+    line-height: 1 !important;
+  }
+
+  .philosophy-card {
+    margin-top: 0 !important;
+  }
+}

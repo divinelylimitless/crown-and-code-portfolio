@@ -2461,3 +2461,17 @@ body:has(.projects-section) .project-card:nth-child(7) {
 .footer-logo img:hover {
   opacity: 1;
 }
+/* Mobile Navigation Fix */
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.nav a {
+  white-space: nowrap;
+}

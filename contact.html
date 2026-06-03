@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
 <nav class="nav">
 
   <a href="index.html" class="logo">
@@ -24,7 +25,7 @@
   </div>
 
 </nav>
-<main class="container"></main>
+
 <section class="contact-hero">
 
   <div class="contact-overlay">
@@ -36,41 +37,64 @@
       <h1>Get In Touch</h1>
 
       <p class="hero-text">
-        Have a project in mind or want to work together?
-        I’d love to hear from you.
+        Ready to create a website for your organisation, programme or brand?
+        Send an enquiry and I’ll get back to you.
       </p>
+
+      <a class="btn" href="mailto:crownandcode.studio@gmail.com">
+        Email Crown & Code
+      </a>
 
     </div>
 
     <div class="contact-card">
 
-      <h2>Send a Message</h2>
+      <h2>Send an Enquiry</h2>
 
-      <form class="contact-form">
+     <form
+  action="https://formspree.io/f/xbdejlnz"
+  method="POST"
+  class="contact-form">
+  <input type="hidden" name="_subject" value="New Crown & Code Website Enquiry">
+<input
+type="text"
+name="name"
+placeholder="Your Name"
+required>
 
-        <input type="text" placeholder="Your Name">
+<input
+type="email"
+name="email"
+placeholder="Email Address"
+required>
 
-        <input type="email" placeholder="Email Address">
+<input
+type="text"
+name="subject"
+placeholder="Subject">
 
-        <input type="text" placeholder="Subject">
-
-        <textarea placeholder="Tell me about your project..."></textarea>
+<textarea
+name="message"
+placeholder="Tell me about your project..."
+required></textarea>
 
         <button class="btn" type="submit">
-          Send Message
+          Send Enquiry
         </button>
 
       </form>
 
     </div>
 
+  </div>
+
 </section>
-  </main>
 
-  <footer class="footer">
-    <p>© 2026 Crown & Code — Built by Alicia Samuels</p>
-  </footer>
+<footer class="footer">
+  <p>© 2026 Crown & Code — Built by Alicia Samuels</p>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>

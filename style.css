@@ -2389,3 +2389,65 @@ body:has(.projects-section) .project-card:nth-child(7) {
     margin-top: 0 !important;
   }
 }
+/* FINAL HOMEPAGE MOBILE FIX */
+
+@media (max-width: 700px) {
+
+  body:has(.home-hero) {
+    background: #0d0b09 !important;
+  }
+
+  body:has(.home-hero) .nav {
+    position: absolute !important;
+    top: 22px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 92% !important;
+    padding: 0 !important;
+    background: transparent !important;
+    z-index: 9999 !important;
+  }
+
+  body:has(.home-hero) .logo {
+    display: none !important;
+  }
+
+  body:has(.home-hero) .nav-links {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    max-width: 330px !important;
+    margin: 0 auto !important;
+  }
+
+  body:has(.home-hero) .nav-links a {
+    font-size: 0.78rem !important;
+    padding: 7px 12px !important;
+    background: rgba(255,255,255,0.38) !important;
+    border: 1px solid rgba(255,255,255,0.35) !important;
+    backdrop-filter: blur(14px) !important;
+  }
+
+  body:has(.home-hero) .home-hero {
+    min-height: 100vh !important;
+    padding: 120px 22px 60px !important;
+    margin-top: 0 !important;
+    background-position: center top !important;
+  }
+
+  body:has(.home-hero) .home-hero .hero-overlay {
+    margin-top: 60px !important;
+    padding: 30px 24px !important;
+  }
+
+  body:has(.home-hero) .home-hero h1 {
+    font-size: 2.55rem !important;
+    line-height: 1.05 !important;
+  }
+
+  body:has(.home-hero) .home-hero .hero-text {
+    font-size: 1rem !important;
+    line-height: 1.65 !important;
+  }
+}

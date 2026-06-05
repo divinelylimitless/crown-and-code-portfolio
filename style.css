@@ -2499,3 +2499,27 @@ nav button {
   white-space: nowrap !important;
   font-size: 14px !important;
 }
+
+/* FINAL CROWN & CODE MOBILE LIGHT FIX */
+
+@media (max-width: 700px) {
+  body,
+  body:has(.home-hero) {
+    background: #f7f3ee !important;
+    color: #2a211c !important;
+  }
+
+  body:has(.home-hero) .container,
+  body:has(.home-hero) .work-with-me,
+  body:has(.home-hero) .about-preview,
+  body:has(.home-hero) .projects-preview {
+    background: #f7f3ee !important;
+    color: #2a211c !important;
+  }
+
+  body:has(.home-hero) h1,
+  body:has(.home-hero) h2,
+  body:has(.home-hero) p {
+    color: #2a211c !important;
+  }
+}

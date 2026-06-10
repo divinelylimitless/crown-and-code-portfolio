@@ -2523,3 +2523,24 @@ nav button {
     color: #2a211c !important;
   }
 }
+
+/* FINAL HOMEPAGE HERO READABILITY FIX */
+
+.home-hero .hero-overlay {
+  background: rgba(20, 16, 12, 0.48) !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+  border: 1px solid rgba(255,255,255,0.14) !important;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.22) !important;
+}
+
+.home-hero .hero-overlay h1,
+.home-hero .hero-overlay .hero-tag,
+.home-hero .hero-overlay .hero-text {
+  color: #f7f3ee !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.35) !important;
+}
+
+.home-hero .hero-overlay .btn {
+  color: #ffffff !important;
+}

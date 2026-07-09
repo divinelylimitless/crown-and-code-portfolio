@@ -1937,7 +1937,7 @@ body:has(.projects-section) .code-project {
   body:has(.projects-section) .projects {
     grid-template-columns: 1fr !important;
   }
-
+}
 .heritage-pillars {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -2677,4 +2677,8 @@ nav button {
 
 .project-card {
   height: auto;
+}
+.projects-clean .project-card {
+  grid-column: auto !important;
+  grid-row: auto !important;
 }
